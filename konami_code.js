@@ -9,11 +9,11 @@ let index = 0;
 function onKeyDownHandler(e) {
   const key = parseInt(e.detail || e.which);
  
-  if (key === alphabet[index]) {
+  if (key === code[index]) {
     index++;
  
-    if (index === alphabet.length) {
-      alert("Hurray!");
+    if (index === code.length) {
+      alert("You Have 30 Lives!");
  
       index = 0;
     }
