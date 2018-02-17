@@ -9,7 +9,6 @@ let index = 0;
 document.addEventListener('keydown', function(e) {
   var key = code[e.keyCode];
   var requiredKey = code[index];
-}
   
   if (key == requiredKey) {
 
@@ -22,9 +21,9 @@ function onKeyDownHandler(e) {
   if (index == code.length) {
       alert("You Have 30 Lives!");();
       index = 0;
-    }
-}
+  
   } else {
     index = 0;
   }
+}
 }
