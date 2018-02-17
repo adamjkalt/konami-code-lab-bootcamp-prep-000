@@ -14,16 +14,13 @@ document.addEventListener('keydown', function(e) {
 
     index++;
   }
- 
-function onKeyDownHandler(e) {
-  const key = parseInt(e.detail || e.which);
- 
   if (index == code.length) {
       alert("You Have 30 Lives!");();
       index = 0;
   
-  } else {
+  } 
+  else {
     index = 0;
-  }
+
 }
 }
