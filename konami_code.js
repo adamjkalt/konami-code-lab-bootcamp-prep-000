@@ -8,6 +8,10 @@ let index = 0;
 
 document.addEventListener('keydown', function(e) {
   var requiredKey = code[index];
+}
+  if requiredKey {
+
+    index++;
  
 function onKeyDownHandler(e) {
   const key = parseInt(e.detail || e.which);
@@ -23,5 +27,6 @@ function onKeyDownHandler(e) {
   } else {
     index = 0;
   }
+}
 }
 }
