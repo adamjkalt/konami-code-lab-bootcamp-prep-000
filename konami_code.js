@@ -4,22 +4,19 @@ function init() {
 
   let index = 0;
 
-
-
-
-  document.addEventListener('keydown', function(e) {
-    var key = code[e.keyCode];
-    var requiredKey = code[index];
-  
-    if (key == requiredKey) {
-      index++;
-    }
-    if (index == code.length - 1) {
-        alert("Hurray");
-        index = 0;
-    } 
-    else {
+  document.addEventListener('keydown', function onKeyDownHandler(e) {
+  const key = parseInt(e.detail || e.which);
+ 
+  if (key === code[index]) {
+    index++;
+ 
+    if (index === code.length) {
+      alert("Hurray!");
+ 
       index = 0;
     }
+  } else {
+    index = 0;
+  }
   });
 }
