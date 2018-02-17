@@ -10,9 +10,11 @@ document.addEventListener('keydown', function(e) {
    var key = code[e.keyCode];
   var requiredKey = code[index];
 }
-  if requiredKey {
+  
+  if (key == requiredKey) {
 
     index++;
+  }
  
 function onKeyDownHandler(e) {
   const key = parseInt(e.detail || e.which);
