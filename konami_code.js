@@ -11,7 +11,7 @@ function init() {
     if (key == requiredKey) {
       index++;
     }
-    if (index == code.length) {
+    if (index == code.length - 1) {
         alert("Hurray");
         index = 0;
     } 
