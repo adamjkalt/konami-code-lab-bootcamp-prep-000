@@ -17,25 +17,11 @@ function onKeyDownHandler(e) {
   const key = parseInt(e.detail || e.which);
  
   if (index == code.length) {
-      activateCheats();
+      alert("You Have 30 Lives!");();
       index = 0;
     }
-  } else {
-    konamiCodePosition = 0;
-  }
-});
-  
-  if (key === code[index]) {
-    index++;
- 
-    if (index === code.length) {
-      alert("You Have 30 Lives!");
- 
-      index = 0;
-    }
+}
   } else {
     index = 0;
   }
-}
-}
 }
