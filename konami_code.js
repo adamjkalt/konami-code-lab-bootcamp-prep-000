@@ -2,26 +2,11 @@ const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
 
 function init() {
 
-let cursor = 0;
- function onKeyDownHandler(e) {
-  const key = parseInt(e.detail || e.which);
-  
-document.addEventListener('keydown', (e) => {
-  cursor = (e.keyCode == code[cursor]) ? cursor + 1 : 0;
-  if (cursor == code.length)  alert("Hurray!");
-});
-}
-}
+$(document).on('keyup',
 
-  if (key === alphabet[index]) {
-    index++;
- 
-    if (index === alphabet.length) {
-      alert("Hurray!");
- 
-      index = 0;
-    }
-  } else {
-    index = 0;
-  }
+    Konami.code(function() {
+        alert('Congratulations, 30 lives!');
+    })
+
+);
 }
